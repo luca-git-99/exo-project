@@ -1,9 +1,10 @@
 # exo-project
 
-''' webapp to upload a RAW image to a folder and convert it to PNG/JPEG,
+''' webapp to upload a RAW image to a folder and convert it to JPEG,
 The index.html page shows the upload form and thumbnail of the files processed.
-the name of the new jpg image is the same as the RAW + .png.
-ie  RAW_NIKON_D1.NEF >>> NIKON_D1.NEF.png
+A md5 and sha1 checsum is shows with the file name for further processing.
+
+ie  RAW_CANON_S30.CRW >>> /uploads/RAW_CANON_S30.CRW.jpg?SHA1=SHA1%3A+8b02b7a508a1b338a3ee24f02007d83373a4e252"
 
 do@do:~/$ python3 app4.py 
  * Serving Flask app 'app4'
