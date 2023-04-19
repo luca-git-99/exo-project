@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %} {% endblock %} - FlaskApp</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container"> <font size="+4"><nav> <a href="{{ url_for('index') }}">Home</a> 
+  <a href="{{ url_for('converter') }}"> RAWconverter </a> <a href="{{ url_for('sketcher') }}"> 
+  Sketchify </a> <a # >##</a> <a href="https://github.com/palucaville" target="_blank"><img src="../static/images/github_logo.jpg" alt="github" width="80" height="80" border="0" align="middle"></a> 
+  </nav></font> 
+  <hr>
+    <div class="content">
+   </div>    
+  <p>{% block content %} {% endblock %} </p>
+  <hr>
+  <p align="center"><img src="../static/images/python10.jpg" alt="python" width="200" height="200"><img src="../static/images/flask.png" alt="flask" width="315" height="139"> 
+  </p>
+  </div>
+</body>
+</html>

@@ -1,19 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <title>File Upload</title>
-  </head>
-  <body>
-    <h1>File Upload</h1>
-<p> Accepted formats: .CR2, .NEF, .CRW,  </p>
-    <form method="POST" action="" enctype="multipart/form-data">
-      <p><input type="file" name="file"></p>
-      <p><input type="submit" value="Submit"></p>
-    </form>
-  <hr>
-  {% for file in files %}
-      <img src="{{ url_for('upload', filename=file) }}" style="width: 128px">
-      <p> "{{ url_for('upload', filename=file) }}"<p>
-    {% endfor %}
-  </body>
-</html>
+{% extends 'base.html' %} 
+
+{% block content %}
+	<p align="center">
+	<img src="../static/images/churchofsatan_friendly._medium.png" width="600" height="600">
+	<img src="../static/images/sign_1.gif" width="74" height="66"> 
+	</p>
+  
+ {% endblock %} 
